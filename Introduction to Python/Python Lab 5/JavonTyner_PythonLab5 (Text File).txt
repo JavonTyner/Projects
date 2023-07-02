@@ -1,0 +1,36 @@
+# Javon Tyner
+# Python Lab 5 
+# June 23rd, 2023
+
+
+
+
+def calculate_calories_from_fat(fat_grams):
+    # Calculates the number of calories from fat based on the provided formula
+    return fat_grams * 9
+
+def calculate_calories_from_carbs(carb_grams):
+    # Calculates the number of calories from carbohydrates based on the provided formula
+    return carb_grams * 4
+
+def main():
+    # Prompt the user to enter the number of fat grams consumed
+    fat_grams = float(input("Enter the number of fat grams consumed: "))
+
+    # Prompt the user to enter the number of carbohydrate grams consumed
+    carb_grams = float(input("Enter the number of carbohydrate grams consumed: "))
+
+    # Calculate the calories from fat using the calculate_calories_from_fat() function
+    calories_from_fat = calculate_calories_from_fat(fat_grams)
+
+    # Calculate the calories from carbohydrates using the calculate_calories_from_carbs() function
+    calories_from_carbs = calculate_calories_from_carbs(carb_grams)
+
+    # Display the calculated calories from fat and carbohydrates
+    print("Calories from fat: ", calories_from_fat)
+    print("Calories from carbs: ", calories_from_carbs)
+
+if __name__ == "__main__":
+    # Call the main() function when the script is executed
+    main()
+
